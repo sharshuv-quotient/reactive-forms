@@ -20,8 +20,7 @@
     "build:lib": "ng build @ngneat/reactive-forms --prod && npm run schematics:build && npm run copy",
     "release": "cd projects/ngneat/reactive-forms && standard-version --infile ../../../CHANGELOG.md",
     "copy": "npm run schematics:copy && cp -r README.md dist/ngneat/reactive-forms",
-    "lint:playground": "eslint ./src --ext .ts",
-    "prepare": "npm run build:lib"
+    "lint:playground": "eslint ./src --ext .ts"
   },
   "private": true,
   "dependencies": {
@@ -34,7 +33,6 @@
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
     "@ngneat/lib": "^1.0.0",
-    "@ngneat/reactive-forms": "^1.0.0",
     "requireindex": "^1.1.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
@@ -77,6 +75,8 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "pre-commit": "npm run hooks:pre-commit && lint-staged"
     }
   },
   "config": {
