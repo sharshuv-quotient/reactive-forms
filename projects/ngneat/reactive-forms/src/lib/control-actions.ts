@@ -5,7 +5,7 @@ import { FormArray } from './formArray';
 import { FormControl } from './formControl';
 import { FormGroup } from './formGroup';
 import { AbstractControl, ControlOptions, ControlState, ValidatorFn, ControlPath } from './types';
-import { coerceArray, isNil } from './utils';
+import { coerceArray, isNil, isTruthy } from './utils';
 
 function getControlValue<T>(control: AbstractControl<T>): T {
   if ((control as any).getRawValue) {
@@ -100,7 +100,7 @@ export function mergeControlValidators<T, Control extends AbstractControl<T>>(
   control: Control,
   validators: ValidatorFn<T> | ValidatorFn<T>[]
 ): void {
-  control.setValidators([control.validator, ...coerceArray(validators)]);
+  control.setValidators([control.validator, ...coerceArray(validators)].filter(isTruthy));
   control.updateValueAndValidity();
 }
 

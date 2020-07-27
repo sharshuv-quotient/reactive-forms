@@ -1,14 +1,6 @@
 import { FormArray as NgFormArray } from '@angular/forms';
-import {
-  isObservable,
-  Observable,
-  Subject,
-  Subscription
-} from 'rxjs';
-import {
-  distinctUntilChanged,
-  map
-} from 'rxjs/operators';
+import { isObservable, Observable, Subject, Subscription } from 'rxjs';
+import { distinctUntilChanged, map } from 'rxjs/operators';
 import {
   controlDisabled$,
   controlDisabledWhile,
@@ -38,7 +30,7 @@ import {
   ControlValue,
   ControlOfValue
 } from './types';
-import { coerceArray } from './utils';
+import { coerceArray, isTruthy } from './utils';
 
 export class FormArray<T = any, E extends object = any> extends NgFormArray {
   readonly value: ControlValue<T>[];
@@ -81,7 +73,10 @@ export class FormArray<T = any, E extends object = any> extends NgFormArray {
 
   setValue(valueOrObservable: Observable<ControlValue<T>[]>, options?: ControlEventOptions): Subscription;
   setValue(valueOrObservable: ControlValue<T>[], options?: ControlEventOptions): void;
-  setValue(valueOrObservable: ControlValue<T>[] | Observable<ControlValue<T>[]>, options?: ControlEventOptions): Subscription | void {
+  setValue(
+    valueOrObservable: ControlValue<T>[] | Observable<ControlValue<T>[]>,
+    options?: ControlEventOptions
+  ): Subscription | void {
     if (isObservable(valueOrObservable)) {
       return valueOrObservable.subscribe(value => super.setValue(value, options));
     }
@@ -124,7 +119,7 @@ export class FormArray<T = any, E extends object = any> extends NgFormArray {
   }
 
   mergeAsyncValidators(validators: AsyncValidator) {
-    this.setAsyncValidators([this.asyncValidator, ...coerceArray(validators)]);
+    this.setAsyncValidators([this.asyncValidator, ...coerceArray(validators)].filter(isTruthy));
     this.updateValueAndValidity();
   }
 

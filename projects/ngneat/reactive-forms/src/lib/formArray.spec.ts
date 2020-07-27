@@ -160,7 +160,7 @@ describe('FormArray', () => {
   it('should validateOn', () => {
     const control = createArray();
 
-    const subject = new Subject<object>();
+    const subject = new Subject<object | null>();
     control.validateOn(subject);
     subject.next({ someError: true });
     expect(control.errors).toEqual({ someError: true });

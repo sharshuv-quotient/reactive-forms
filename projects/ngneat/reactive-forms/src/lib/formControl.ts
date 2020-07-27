@@ -29,7 +29,7 @@ import {
   Validator,
   ValidatorOrOpts
 } from './types';
-import { coerceArray } from './utils';
+import { coerceArray, isTruthy } from './utils';
 
 export class FormControl<T = any, E extends object = any> extends NgFormControl {
   readonly value: T;
@@ -88,7 +88,7 @@ export class FormControl<T = any, E extends object = any> extends NgFormControl 
   }
 
   mergeAsyncValidators(validators: AsyncValidator) {
-    this.setAsyncValidators([this.asyncValidator, ...coerceArray(validators)]);
+    this.setAsyncValidators([this.asyncValidator, ...coerceArray(validators)].filter(isTruthy));
     this.updateValueAndValidity();
   }
 

@@ -161,7 +161,7 @@ describe('FormControl', () => {
 
   it('should validateOn', () => {
     const control = new FormControl<string>();
-    const subject = new Subject<object>();
+    const subject = new Subject<object | null>();
     control.validateOn(subject);
     subject.next({ someError: true });
     expect(control.errors).toEqual({ someError: true });
@@ -200,7 +200,7 @@ describe('FormControl', () => {
   });
 
   it('should errorChanges$', () => {
-    const control = new FormControl<string>(null, Validators.required);
+    const control = new FormControl<string | null>(null, Validators.required);
     const spy = jest.fn();
     control.errors$.subscribe(spy);
     expect(spy).toHaveBeenCalledWith({ required: true });
