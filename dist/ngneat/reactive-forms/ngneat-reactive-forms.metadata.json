@@ -1,0 +1,261 @@
+{
+  "__symbolic": "module",
+  "version": 4,
+  "metadata": {
+    "FormArray": {
+      "__symbolic": "class",
+      "arity": 2,
+      "extends": {
+        "__symbolic": "reference",
+        "module": "@angular/forms",
+        "name": "FormArray",
+        "line": 42,
+        "character": 64
+      },
+      "members": {
+        "__ctor__": [
+          {
+            "__symbolic": "constructor",
+            "parameters": [
+              {
+                "__symbolic": "reference",
+                "name": "Array",
+                "arguments": [{ "__symbolic": "reference", "name": "ɵd" }]
+              },
+              { "__symbolic": "reference", "name": "ɵa" },
+              { "__symbolic": "reference", "name": "ɵb" }
+            ]
+          }
+        ],
+        "select": [{ "__symbolic": "method" }],
+        "getRawValue": [{ "__symbolic": "method" }],
+        "at": [{ "__symbolic": "method" }],
+        "setValue": [{ "__symbolic": "method" }, { "__symbolic": "method" }, { "__symbolic": "method" }],
+        "patchValue": [{ "__symbolic": "method" }, { "__symbolic": "method" }, { "__symbolic": "method" }],
+        "push": [{ "__symbolic": "method" }],
+        "insert": [{ "__symbolic": "method" }],
+        "setControl": [{ "__symbolic": "method" }],
+        "disabledWhile": [{ "__symbolic": "method" }],
+        "enabledWhile": [{ "__symbolic": "method" }],
+        "mergeValidators": [{ "__symbolic": "method" }],
+        "mergeAsyncValidators": [{ "__symbolic": "method" }],
+        "markAsTouched": [{ "__symbolic": "method" }],
+        "markAsUntouched": [{ "__symbolic": "method" }],
+        "markAsPristine": [{ "__symbolic": "method" }],
+        "markAsDirty": [{ "__symbolic": "method" }],
+        "markAllAsDirty": [{ "__symbolic": "method" }],
+        "reset": [{ "__symbolic": "method" }],
+        "setValidators": [{ "__symbolic": "method" }],
+        "setAsyncValidators": [{ "__symbolic": "method" }],
+        "validateOn": [{ "__symbolic": "method" }],
+        "hasError": [{ "__symbolic": "method" }],
+        "setErrors": [{ "__symbolic": "method" }],
+        "getError": [{ "__symbolic": "method" }],
+        "hasErrorAndTouched": [{ "__symbolic": "method" }],
+        "hasErrorAndDirty": [{ "__symbolic": "method" }],
+        "setEnable": [{ "__symbolic": "method" }],
+        "setDisable": [{ "__symbolic": "method" }]
+      }
+    },
+    "FormControl": {
+      "__symbolic": "class",
+      "arity": 2,
+      "extends": {
+        "__symbolic": "reference",
+        "module": "@angular/forms",
+        "name": "FormControl",
+        "line": 33,
+        "character": 66
+      },
+      "members": {
+        "__ctor__": [
+          {
+            "__symbolic": "constructor",
+            "parameters": [
+              { "__symbolic": "reference", "name": "ɵc" },
+              { "__symbolic": "reference", "name": "ɵa" },
+              { "__symbolic": "reference", "name": "ɵb" }
+            ]
+          }
+        ],
+        "setValue": [{ "__symbolic": "method" }, { "__symbolic": "method" }, { "__symbolic": "method" }],
+        "patchValue": [{ "__symbolic": "method" }, { "__symbolic": "method" }, { "__symbolic": "method" }],
+        "disabledWhile": [{ "__symbolic": "method" }],
+        "enabledWhile": [{ "__symbolic": "method" }],
+        "mergeValidators": [{ "__symbolic": "method" }],
+        "mergeAsyncValidators": [{ "__symbolic": "method" }],
+        "markAsTouched": [{ "__symbolic": "method" }],
+        "markAsUntouched": [{ "__symbolic": "method" }],
+        "markAsPristine": [{ "__symbolic": "method" }],
+        "markAsDirty": [{ "__symbolic": "method" }],
+        "markAllAsDirty": [{ "__symbolic": "method" }],
+        "reset": [{ "__symbolic": "method" }],
+        "setValidators": [{ "__symbolic": "method" }],
+        "setAsyncValidators": [{ "__symbolic": "method" }],
+        "validateOn": [{ "__symbolic": "method" }],
+        "getError": [{ "__symbolic": "method" }],
+        "hasError": [{ "__symbolic": "method" }],
+        "setErrors": [{ "__symbolic": "method" }],
+        "hasErrorAndTouched": [{ "__symbolic": "method" }],
+        "hasErrorAndDirty": [{ "__symbolic": "method" }],
+        "setEnable": [{ "__symbolic": "method" }],
+        "setDisable": [{ "__symbolic": "method" }]
+      }
+    },
+    "FormGroup": {
+      "__symbolic": "class",
+      "arity": 2,
+      "extends": {
+        "__symbolic": "reference",
+        "module": "@angular/forms",
+        "name": "FormGroup",
+        "line": 46,
+        "character": 34
+      },
+      "members": {
+        "__ctor__": [
+          {
+            "__symbolic": "constructor",
+            "parameters": [
+              { "__symbolic": "reference", "name": "ɵe" },
+              { "__symbolic": "reference", "name": "ɵa" },
+              { "__symbolic": "reference", "name": "ɵb" }
+            ]
+          }
+        ],
+        "select": [{ "__symbolic": "method" }],
+        "getRawValue": [{ "__symbolic": "method" }],
+        "get": [
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" }
+        ],
+        "getControl": [
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" }
+        ],
+        "addControl": [{ "__symbolic": "method" }],
+        "removeControl": [{ "__symbolic": "method" }],
+        "contains": [{ "__symbolic": "method" }],
+        "setControl": [{ "__symbolic": "method" }],
+        "setValue": [{ "__symbolic": "method" }, { "__symbolic": "method" }, { "__symbolic": "method" }],
+        "patchValue": [{ "__symbolic": "method" }, { "__symbolic": "method" }, { "__symbolic": "method" }],
+        "disabledWhile": [{ "__symbolic": "method" }],
+        "enabledWhile": [{ "__symbolic": "method" }],
+        "mergeValidators": [{ "__symbolic": "method" }],
+        "mergeAsyncValidators": [{ "__symbolic": "method" }],
+        "markAsTouched": [{ "__symbolic": "method" }],
+        "markAsUntouched": [{ "__symbolic": "method" }],
+        "markAsPristine": [{ "__symbolic": "method" }],
+        "markAsDirty": [{ "__symbolic": "method" }],
+        "markAllAsDirty": [{ "__symbolic": "method" }],
+        "reset": [{ "__symbolic": "method" }],
+        "setValidators": [{ "__symbolic": "method" }],
+        "setAsyncValidators": [{ "__symbolic": "method" }],
+        "validateOn": [{ "__symbolic": "method" }],
+        "hasError": [
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" }
+        ],
+        "setErrors": [{ "__symbolic": "method" }],
+        "getError": [
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" }
+        ],
+        "hasErrorAndTouched": [
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" }
+        ],
+        "hasErrorAndDirty": [
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" },
+          { "__symbolic": "method" }
+        ],
+        "setEnable": [{ "__symbolic": "method" }],
+        "setDisable": [{ "__symbolic": "method" }]
+      }
+    },
+    "FormBuilder": {
+      "__symbolic": "class",
+      "extends": {
+        "__symbolic": "reference",
+        "module": "@angular/forms",
+        "name": "FormBuilder",
+        "line": 28,
+        "character": 33
+      },
+      "decorators": [
+        {
+          "__symbolic": "call",
+          "expression": {
+            "__symbolic": "reference",
+            "module": "@angular/core",
+            "name": "Injectable",
+            "line": 27,
+            "character": 1
+          },
+          "arguments": [{ "providedIn": "root" }]
+        }
+      ],
+      "members": {
+        "group": [{ "__symbolic": "method" }],
+        "control": [{ "__symbolic": "method" }],
+        "array": [{ "__symbolic": "method" }]
+      },
+      "statics": { "ɵprov": {} }
+    },
+    "ɵa": { "__symbolic": "interface" },
+    "ɵb": { "__symbolic": "interface" },
+    "ɵc": { "__symbolic": "interface" },
+    "ɵd": { "__symbolic": "interface" },
+    "ɵe": { "__symbolic": "interface" },
+    "AbstractControl": { "__symbolic": "interface" },
+    "ValidatorFn": { "__symbolic": "interface" },
+    "AsyncValidatorFn": { "__symbolic": "interface" },
+    "NgValidatorsErrors": { "__symbolic": "interface" },
+    "ControlValueAccessor": {
+      "__symbolic": "class",
+      "arity": 1,
+      "members": {
+        "writeValue": [{ "__symbolic": "method" }],
+        "registerOnChange": [{ "__symbolic": "method" }],
+        "registerOnTouched": [{ "__symbolic": "method" }]
+      }
+    }
+  },
+  "origins": {
+    "FormArray": "./lib/formArray",
+    "FormControl": "./lib/formControl",
+    "FormGroup": "./lib/formGroup",
+    "FormBuilder": "./lib/formBuilder",
+    "ɵa": "./lib/types",
+    "ɵb": "./lib/types",
+    "ɵc": "./lib/types",
+    "ɵd": "./lib/types",
+    "ɵe": "./lib/types",
+    "AbstractControl": "./lib/types",
+    "ValidatorFn": "./lib/types",
+    "AsyncValidatorFn": "./lib/types",
+    "NgValidatorsErrors": "./lib/types",
+    "ControlValueAccessor": "./lib/controlValueAccessor"
+  },
+  "importAs": "@ngneat/reactive-forms"
+}

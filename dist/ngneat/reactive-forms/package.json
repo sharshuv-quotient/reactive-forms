@@ -1,0 +1,40 @@
+{
+  "name": "@ngneat/reactive-forms",
+  "description": "(Angular Reactive) Forms with Benefits",
+  "version": "1.0.0",
+  "schematics": "./schematics/collection.json",
+  "keywords": [
+    "angular",
+    "angular 2",
+    "reactive-forms",
+    "typed forms",
+    "reactive forms",
+    "angular reactive forms"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@phenomnomnominal/tsquery": "4.1.0",
+    "tslib": "^1.10.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/reactive-forms/issue"
+  },
+  "homepage": "https://github.com/reactive-forms#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reactive-forms"
+  },
+  "main": "bundles/ngneat-reactive-forms.umd.js",
+  "module": "fesm5/ngneat-reactive-forms.js",
+  "es2015": "fesm2015/ngneat-reactive-forms.js",
+  "esm5": "esm5/ngneat-reactive-forms.js",
+  "esm2015": "esm2015/ngneat-reactive-forms.js",
+  "fesm5": "fesm5/ngneat-reactive-forms.js",
+  "fesm2015": "fesm2015/ngneat-reactive-forms.js",
+  "typings": "ngneat-reactive-forms.d.ts",
+  "metadata": "ngneat-reactive-forms.metadata.json",
+  "sideEffects": false
+}
